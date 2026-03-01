@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"sfx_zoom_abrindo",
+  "audioGroupId":{
+    "name":"audiogroup_sfx",
+    "path":"audiogroups/audiogroup_sfx",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":6.0480046,
+  "exportDir":"",
+  "name":"sfx_zoom_abrindo",
+  "parent":{
+    "name":"audiogroup_sfx",
+    "path":"folders/Sons/audiogroup_sfx.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"sfx_zoom_abrindo.mp3",
+  "volume":0.55,
+}

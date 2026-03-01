@@ -1,0 +1,1 @@
+meu_alpha = image_alpha;

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_screenshake",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_screenshake",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Efeitos/Efeito_Mola/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

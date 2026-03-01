@@ -1,0 +1,25 @@
+{
+  "$GMParticleSystem":"",
+  "%Name":"ps_brilho_chamas",
+  "backdropHeight":18,
+  "backdropImageOpacity":0.5,
+  "backdropImagePath":"C:\\Users\\Jonatas Jr\\Desktop\\NoneClass\\Assets\\Assets TintaForma\\Materiais e créditos\\Materiais e créditos\\Assets\\Cenário\\Decoração\\Tocha.gif",
+  "backdropWidth":6,
+  "backdropXOffset":0.0,
+  "backdropYOffset":0.0,
+  "drawOrder":0,
+  "emitters":[
+    {"$GMPSEmitter":"","%Name":"tocha","additiveBlend":true,"directionIncrease":0.0,"directionMax":100.0,"directionMin":80.0,"directionWiggle":0.0,"distribution":0,"editorColour":1090519039,"editorDrawShape":true,"emitCount":-20,"emitDelayMax":0.0,"emitDelayMin":0.0,"emitDelayUnits":1,"emitIntervalMax":0.0,"emitIntervalMin":0.0,"emitIntervalUnits":0,"enabled":true,"endColour":4278190335,"GMPresetName":null,"gravityDirection":270.0,"gravityForce":0.0,"headPosition":0.0,"lifetimeMax":70.0,"lifetimeMin":60.0,"linkedEmitter":{"name":"Chama_tocha","path":"particlelib/Chama_tocha/Chama_tocha.yy",},"locked":false,"midColour":4278255615,"mode":0,"name":"tocha","orientationIncrease":0.0,"orientationMax":0.0,"orientationMin":0.0,"orientationRelative":false,"orientationWiggle":0.0,"regionH":9.57206,"regionW":5.52182,"regionX":0.0,"regionY":-3.0,"resourceType":"GMPSEmitter","resourceVersion":"2.0","scaleX":0.05,"scaleY":0.05,"shape":0,"sizeIncrease":-0.004,"sizeMax":1.0,"sizeMin":0.7,"sizeWiggle":0.0,"spawnOnDeathCount":1,"spawnOnDeathGMPreset":null,"spawnOnDeathId":null,"spawnOnUpdateCount":1,"spawnOnUpdateGMPreset":null,"spawnOnUpdateId":null,"speedIncrease":0.01,"speedMax":0.0,"speedMin":0.0,"speedWiggle":0.0,"spriteAnimate":false,"spriteId":null,"spriteRandom":false,"spriteStretch":true,"startColour":4278212095,"texture":8,},
+  ],
+  "name":"ps_brilho_chamas",
+  "parent":{
+    "name":"Particle Systems",
+    "path":"folders/Particle Systems.yy",
+  },
+  "resourceType":"GMParticleSystem",
+  "resourceVersion":"2.0",
+  "showBackdrop":true,
+  "showBackdropImage":true,
+  "xorigin":0,
+  "yorigin":0,
+}

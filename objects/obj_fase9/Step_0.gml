@@ -1,0 +1,1 @@
+checa_estado_mundo();
