@@ -1,1 +1,1 @@
-global.mundo = "normal";
+global.mundo = "invertido";

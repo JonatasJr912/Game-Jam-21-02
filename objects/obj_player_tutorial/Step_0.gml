@@ -6,8 +6,8 @@ estado();
 
 
 
-if (keyboard_check_pressed(vk_tab)) 
-{ 
-    show_debug_overlay(true);
-  
-}
+//if (keyboard_check_pressed(vk_tab)) 
+//{ 
+    //show_debug_overlay(true);
+  //
+//}

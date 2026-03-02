@@ -39,7 +39,7 @@ draw_set_halign(fa_left);
 draw_text(left + 24, top + 55, "Tela cheia");
 
 draw_set_halign(fa_left);
-draw_text(left + 24, y_fxoff - 10, "Desativar efeitos");
+draw_text(left + 24, y_fxoff - 10, "Desativa efeitos (desempenho)");
 
 // Caixa fullscreen
 draw_set_color(make_color_rgb(60, 70, 85));

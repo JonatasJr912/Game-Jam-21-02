@@ -117,6 +117,19 @@ estado_movimentando = function()
             x = tx;
             y = ty; 
             chegou = true; //Agora é só esperar a animação terminar
+            
+            //morreu se caiu no tile do inimigo (imediato)
+            morre_se_inimigo_no_tile();
+            if (estado == estado_morrendo)
+            {
+                // cancela o movimento pra não ter “mais um frame” de coisas estranhas
+                movimenta = false;
+                alvo_x = noone;
+                alvo_y = noone;
+                chegou = false;
+                exit;
+            }
+            
         }
         
     }else 
@@ -129,10 +142,6 @@ estado_movimentando = function()
     
         // Reseta para poder movimentar novamente
         chegou = false;
-    
-        // CHECA COLISÃO COM INIMIGO NO TILE (PLAYER MORRE)
-        //morre_se_tile_ocupado();
-        //if (estado == estado_morrendo) exit;
     
         // Se não morreu, segue normal
         estado = estado_parado;
@@ -265,18 +274,53 @@ estado_morrendo = function()
     
 } 
 
-//morre_se_tile_ocupado = function()
-//{
-    //// Se já está morrendo, não reprocessa
-    //if (estado == estado_morrendo) exit;
-//
-    //if (instance_position(x, y, obj_inimigo1) != noone
-    //||  instance_position(x, y, obj_inimigo2) != noone)
-    //{
-        //estado = estado_morrendo;
-        //exit;
-    //}
-//}
+morre_se_inimigo_no_tile = function()
+{
+    // sem inimigos, sem trabalho
+    if (!instance_exists(obj_inimigo1) && !instance_exists(obj_inimigo2)) return;
+
+    // pega meu tile atual (grid)
+    var t_me = instance_position(x, y, obj_chao);
+    if (t_me == noone) return;
+
+    var my_px = t_me.px;
+    var my_py = t_me.py;
+
+    // procura inimigo1 no mesmo px/py
+    var n1 = instance_number(obj_inimigo1);
+    for (var i = 0; i < n1; i++)
+    {
+        var e = instance_find(obj_inimigo1, i);
+        if (e == noone) continue;
+
+        // opcional: ignora inimigo já morrendo
+        if (e.estado == e.estado_morrendo) continue;
+
+        var te = instance_position(e.x, e.y, obj_chao);
+        if (te != noone && te.px == my_px && te.py == my_py)
+        {
+            estado = estado_morrendo;
+            return;
+        }
+    }
+
+    // procura inimigo2 no mesmo px/py
+    var n2 = instance_number(obj_inimigo2);
+    for (var j = 0; j < n2; j++)
+    {
+        var e2 = instance_find(obj_inimigo2, j);
+        if (e2 == noone) continue;
+
+        if (e2.estado == e2.estado_morrendo) continue;
+
+        var te2 = instance_position(e2.x, e2.y, obj_chao);
+        if (te2 != noone && te2.px == my_px && te2.py == my_py)
+        {
+            estado = estado_morrendo;
+            return;
+        }
+    }
+}
 
 
 

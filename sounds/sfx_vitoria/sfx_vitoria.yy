@@ -22,5 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":44100,
   "soundFile":"sfx_vitoria.wav",
-  "volume":0.46,
+  "volume":0.28,
 }

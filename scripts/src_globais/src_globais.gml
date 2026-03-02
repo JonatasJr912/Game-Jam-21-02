@@ -61,6 +61,12 @@ function destroi_efeito_inverte_mundo()
     //
 //}
 
+function voltar_menu()
+{
+    room_goto(rm_menu);
+    
+}
+
 
 function avancar_fase()
 {
@@ -106,8 +112,9 @@ function scr_nome_fase(_room)
         case rm_fase_5: return "- Pedala Maguinho -";
         case rm_fase_6: return "- Bispo,Rainha,Rei -";
         case rm_fase_7: return "- 'Efeito Borboleta' -";
-        case rm_fase_8: return "8 - (nome da fase 8)";
-        case rm_fase_9: return "- Encruzilhada do Espelheto -";
+        case rm_fase_8: return "- Dois Pesos duas medidas";
+        case rm_fase_9: return "- Cabo de Guerra -";
+        case rm_fase_10: return "- Encruzilhada do Espelheto -";
         // ...adicione todas as fases aqui
 
         default:

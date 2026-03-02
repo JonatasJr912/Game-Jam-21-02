@@ -3,13 +3,13 @@ depth = -y + 5;
 
 estado();
 
-show_debug_message(string(room) + string(1))
+//show_debug_message(global.tile_atual);
 
-if (keyboard_check_pressed(vk_tab)) 
-{ 
-    show_debug_overlay(true);
-  
-}
+//if (keyboard_check_pressed(vk_tab)) 
+//{ 
+    //show_debug_overlay(true);
+  //
+//}
 
 if (keyboard_check_pressed(vk_enter) && estado == estado_parado) 
 { 

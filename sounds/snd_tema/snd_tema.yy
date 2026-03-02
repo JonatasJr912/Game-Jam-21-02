@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":128.26562,
+  "duration":123.019226,
   "exportDir":"",
   "name":"snd_tema",
   "parent":{
@@ -22,5 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":44100,
   "soundFile":"snd_tema.wav",
-  "volume":1.0,
+  "volume":0.5,
 }

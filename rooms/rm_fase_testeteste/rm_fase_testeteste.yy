@@ -374,8 +374,8 @@
   ],
   "name":"rm_fase_testeteste",
   "parent":{
-    "name":"FASES",
-    "path":"folders/Cenas/FASES.yy",
+    "name":"TESTES",
+    "path":"folders/Cenas/TESTES.yy",
   },
   "parentRoom":null,
   "physicsSettings":{
